@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calcicontainer {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+.calci-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calcidisplay {
+  height: 60px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  text-align: right;
+  padding: 10px 15px;
+  overflow-x: auto;
+  color: #333;
+}
+
+.calcibuttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calciorp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.orpbtn {
+  flex: 1 1 20%;
+  padding: 12px 0;
+  font-size: 1.2rem;
+  background-color: #ff9f43;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.orpbtn:hover {
+  background-color: #e07b00;
+}
+
+.enter button {
+  background-color: #28c76f;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.enter button:hover {
+  background-color: #20a65b;
+}
+
+.calcinums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.num,
+#del,
+#ac {
+  padding: 15px 0;
+  font-size: 1.1rem;
+  background-color: #dcdde1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.num:hover,
+#del:hover,
+#ac:hover {
+  background-color: #b2bec3;
+}
+
+#del {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+#del:hover {
+  background-color: #e55050;
+}
+
+#ac {
+  background-color: #576574;
+  color: white;
+}
+
+#ac:hover {
+  background-color: #3c3f4a;
+}
